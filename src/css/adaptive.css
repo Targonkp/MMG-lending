@@ -1,0 +1,491 @@
+@media only screen and (max-width: 1366px){
+    header{
+        padding: 0 100px;
+    }
+
+    .logo{
+        width:20%;
+    }
+
+    .meny{
+        width: 65%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .meny-list{
+        font-size: 14px;
+    }
+
+    .meny a{
+        margin: 0 45px 0 0;
+    }
+
+    .login{
+        width: 15%;
+    }
+
+    .section-1-left{
+        width: 50%;
+    }
+
+    .section-1-right {
+        width: 50%;
+    }
+
+    .section-1-left>div{
+        margin: -65px 0 0 -110px;
+    }
+
+    .section-2-right {
+        padding: 0 110px;
+    }
+
+    .section-3-background{
+       width: 1000px;
+        height: 350px;
+        right:-50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .section-1-left > div {
+        margin: -70px 0 0 -12%;
+    }
+
+    .section-1-left {
+        width: 50%;
+    }
+
+    .section-1-right {
+        width: 50%;
+    }
+
+    .section-2-right {
+        padding: 0 50px;
+    }
+
+    .swiper-container {
+        padding: 10px 0 50px 0;
+    }
+
+    .section-3 {
+        padding: 50px;
+    }
+
+    .section-4-content {
+        padding: 170px 50px;
+    }
+
+    .section-5 {
+        padding: 70px 50px;
+    }
+
+    .section-6 {
+        padding: 70px 0 35px 0;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    header{
+        padding: 0 50px;
+    }
+
+    .meny{
+        display: flex;
+        justify-content: center;
+    }
+
+    .meny a{
+        margin: 0 35px 0 0;
+    }
+
+    .logo img{
+        width: 145px;
+        height: 90px;
+    }
+
+    .section-1-left{
+        width: 50%;
+    }
+
+    .section-1-left>div{
+        margin: -50px 0 0 -5%;
+    }
+
+    .section-1-right{
+        margin: 0 0 0 100px;
+        width: 50%;
+    }
+
+    .section-1-list{
+        font-size: 18px;
+    }
+
+    .ble{
+        font-size:68px;
+    }
+
+    .technology{
+        font-size: 18px;
+    }
+
+    .rectangle{
+        width: 200px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .section-3-background{
+        width:700px;
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .section-1-left>div{
+        margin: -50px 0 0 -15%;
+    }
+
+    .section-1-list{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .section-1-list>li{
+        margin: 0 0 50px 0;
+    }
+
+    .section-1-content {
+        padding: 0 0 120px 0;
+    }
+
+    .ble {
+        font-size: 50px;
+    }
+
+    .rectangle {
+        width: 160px;
+        height: 35px;
+    }
+
+    .technology {
+        font-size: 16px;
+    }
+
+    .section-3-background{
+        display: none;
+    }
+
+    .section-5-list{
+        margin: 0 0 0 -20px;
+    }
+
+    .section-5-list>li{
+        margin: 0 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+
+    h1 {
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    .btn-send {
+        padding: 16px 50px;
+    }
+
+    header {
+        padding: 0 20px;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        background: #ffffff;
+        box-sizing: border-box;
+        margin: -70px 0 0 0;
+        z-index: 30;
+    }
+
+    .btn-blue {
+        padding: 10px 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .meny {
+        width: 85%;
+    }
+
+    .burger-meny {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 30;
+        width: 70px;
+        height: 70px;
+        background: #2c67b1;
+    }
+
+    .burger-meny:hover .burger-meny-lines {
+        filter: brightness(0.7);
+    }
+
+    .burger-meny-lines,
+    .burger-meny-lines:after,
+    .burger-meny-lines:before {
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        background: #ffffff;
+    }
+
+    .burger-meny-lines {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .burger-meny-lines:before {
+        content: '';
+        top: -12px;
+    }
+
+    .burger-meny-lines:after {
+        content: '';
+        top: 12px;
+    }
+
+    .burger-meny-active .burger-meny-lines {
+        background: transparent;
+    }
+
+    .burger-meny-active .burger-meny-lines:before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .burger-meny-active .burger-meny-lines:after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .meny-list {
+        margin: -50px 0 0 0;
+        padding: 80px 0 0 0;
+        position: fixed;
+        z-index: 9;
+        flex-flow: column;
+        height: 100%;
+        background-color: #2c67b1;
+        overflow-y: auto;
+        left: -100%;
+    }
+
+    .burger-meny-active .meny-list {
+        left: 0;
+    }
+
+    .meny-list li {
+        padding: 20px 30px;
+        font-size: 24px;
+    }
+
+    .meny-list a {
+        color: #ffffff;
+    }
+
+    .burger-meny-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 8;
+    }
+
+    .burger-meny-active .burger-meny-overlay {
+        display: block;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .section-1-content {
+        padding: 0 0 150px 0;
+        margin: 70px 0 0 0;
+    }
+
+    .section-1-list {
+        font-weight: 500;
+        font-size: 14px;
+        width: 250px;
+    }
+
+    .section-1-list > li {
+        margin: 0 0 40px 0;
+    }
+
+    .section-1-left > div {
+        display: none;
+    }
+
+    .section-1-left {
+        width: 0;
+    }
+
+    .section-1-right {
+        width: 100%;
+        margin: 0 0 0 70px;
+    }
+
+    .section-2-left {
+        display: none;
+    }
+
+    .section-2-right {
+        width: 100%;
+    }
+
+    .section-3-background {
+        display: none;
+    }
+
+    .section-3-list {
+        z-index: 0;
+    }
+
+    .section-3 {
+        padding: 20px;
+    }
+
+    .section-3-list > li {
+        padding: 10px 30px 10px 50px;
+    }
+
+    .section-3-list > li:nth-child(1):before {
+        top: 15px;
+        left: 15px;
+    }
+
+    .section-3-list > li:nth-child(2):before {
+        top: 15px;
+        left: 15px;
+    }
+
+    .section-3-list > li:nth-child(3):before {
+        top: 15px;
+        left: 15px;
+    }
+
+    .section-4-content{
+        padding: 120px 50px;
+    }
+
+    .section-5-list{
+        flex-wrap: wrap;
+    }
+
+    .section-5-list > li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .section-5-list > li > img {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .date-comment {
+        margin: auto 20px 0 5px;
+    }
+
+    form {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .section-6-textarea {
+        max-width: 550px;
+        width: 100%;
+        height: 180px;
+    }
+
+    .section-6-input {
+        display: flex;
+    }
+}
+
+    @media only screen and (max-width: 550px) {
+
+        .section-1-left > div {
+            display: none;
+        }
+
+        .section-1-left {
+            width: 0;
+        }
+
+        .section-1-content {
+            padding: 0 0 100px 0;
+        }
+
+        .section-1-right {
+            width: 100%;
+            margin: 0 0 0 80px;
+        }
+
+        .section-3-list > li{
+            padding: 10px 30px 10px 20px;
+        }
+
+        .section-3-list > li:nth-child(1):before {
+            top: 15px;
+            left: -12px;
+        }
+
+        .section-3-list > li:nth-child(2):before {
+            top: 15px;
+            left: -12px;
+        }
+
+        .section-3-list > li:nth-child(3):before {
+            top: 15px;
+            left: -12px;
+        }
+
+        .section-4-content{
+            padding: 90px 50px;
+        }
+
+        .section-4-content>h2{
+            font-size: 26px;
+            line-height: 36px;
+        }
+
+        .section-4-content>p{
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .section-4-content>p{
+            margin: 0 0 30px 0;
+        }
+
+        .btn-app img{
+            width: 150px;
+            height: 50px;
+        }
+    }
