@@ -1,7 +1,18 @@
 var gulp = require ('gulp'),
     concat = require('gulp-concat'),
+    csso = require('gulp-csso'),
+    rename = require("gulp-rename"),
     browserSync = require('browser-sync').create();
 
+
+gulp.task('csso', function () {
+    return gulp.src('dist/css/all.css')
+        .pipe(csso())
+        .pipe(rename({
+            suffix: ".mini",
+        }))
+        .pipe(gulp.dest('dist/css/'));
+});
 
 gulp.task('sync', function () {
     browserSync.init({
@@ -17,9 +28,9 @@ gulp.task('sync', function () {
 });
 
 gulp.task('styles', function() {
-    return gulp.src(['./src/css/normalize.css', './src/css/swiper.min.css', './src/css/main.css'])
+    return gulp.src(['./src/css/normalize.css', './src/css/swiper.min.css', './src/css/main.css', './src/css/adaptive.css'])
         .pipe(concat('all.css'))
-        .pipe(gulp.dest('./dist/'));
+        .pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.task('default', gulp.parallel('sync', 'styles'));
+gulp.task('default', gulp.parallel('sync', 'styles', 'csso'));
