@@ -50,6 +50,12 @@ header{
     z-index: 100;
     width: 100%;
     background: #ffffff;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.header-wrap{
+
 }
 
 .burger-meny{
